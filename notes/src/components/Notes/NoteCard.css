@@ -1,0 +1,37 @@
+/* NoteCard.css */
+.like-active {
+  color: #ef4444 !important; /* Red-500 color from Tailwind palette */
+}
+
+.bookmark-active {
+  color: #f59e0b !important; /* Yellow-500 color from Tailwind palette */
+}
+
+/* Interactive effects */
+.like-active .like-icon {
+  fill: #ef4444;
+  color: #ef4444;
+}
+
+.bookmark-active .bookmark-icon {
+  fill: #f59e0b;
+  color: #f59e0b;
+}
+
+/* Hover animations */
+.like-active .like-icon:hover,
+.bookmark-active .bookmark-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* For dashboard and note details */
+button.text-red-500 svg {
+  fill: #ef4444;
+  color: #ef4444;
+}
+
+button.text-yellow-500 svg {
+  fill: #f59e0b;
+  color: #f59e0b;
+} 
