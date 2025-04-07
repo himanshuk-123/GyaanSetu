@@ -16,8 +16,6 @@ const notificationRoutes = require('./src/routes/notification.routes');
 // Initialize Express app
 const app = express();
 const PORT = process.env.PORT || 5000;
-console.log(process.env.MONGODB_URI);
-console.log(process.env.PORT);
 
 // Middleware
 app.use(cors());
