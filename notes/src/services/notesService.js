@@ -12,7 +12,10 @@ export const getNotes = async (page = 1, limit = 10, search = '', tags = '') => 
     if (search) queryParams.append('search', search);
     if (tags) queryParams.append('tags', tags);
     
+    console.log("Himanshu Bhai",queryParams);
     const response = await api.get(`/notes?${queryParams}`);
+
+    console.log(response);
     return response;
   } catch (error) {
     console.error('Error fetching notes:', error);
