@@ -4,6 +4,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 dotenv.config();
 const path = require('path');
+const __dirname = path.resolve(); // only needed in ES modules
 
 // Import routes
 const authRoutes = require('./src/routes/auth.routes');
