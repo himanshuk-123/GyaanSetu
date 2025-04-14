@@ -1,5 +1,4 @@
-/notes/node_modules
-/notes-backend/node_modules
-/notes-backend/node_modules
-/notes-backend/.env
-
+*/node_modules
+*/.env
+.env
+/notes/.env
